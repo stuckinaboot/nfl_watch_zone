@@ -1,0 +1,11 @@
+FINAL PROJECT IDEA
+--------------------
+1) User logs in with their fantasy team (probably fantasy football)
+2) Entire project is on a single page
+3) Lists every player, with their most recent stats right next to their name, and next to that is a news ticker with headlines of their most recent news
+
+NOTES
+--------------------
+-Look into using a template for display everything nicely
+-Use the JQuery ticker I bookmarked for the news ticker
+-Look into what yahoo-fantasy api gives access to

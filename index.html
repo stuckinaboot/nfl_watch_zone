@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    	<link rel="stylesheet" href="node_modules/backgrid/lib/backgrid.css"/>
+    	<script src="node_modules/jquery/dist/jquery.js"></script>
+    	<script src="node_modules/backgrid/node_modules/underscore/underscore-min.js"></script>
+    	<script src="node_modules/backgrid/node_modules/backbone/backbone-min.js"></script>
+    	<script src="node_modules/backgrid/lib/backgrid.js"></script>
+    	<script src="node_modules/backgrid-select-all/backgrid-select-all.js"></script>
+    	<link rel="stylesheet" href="node_modules/jquery-typeahead/src/jquery.typeahead.css"/>
+    	<script src="node_modules/jquery-typeahead/src/jquery.typeahead.js"></script>
+    	<script src="node_modules/js-cookie/src/js.cookie.js"></script>
+        <script src="node_modules/jquery-csv/src/jquery.csv.js"></script>
+        <link rel="stylesheet" href="node_modules/alertify.js-0.3.11/themes/alertify.default.css" />
+        <link rel="stylesheet" href="node_modules/alertify.js-0.3.11/themes/alertify.core.css" />
+        <link rel="stylesheet" href="node_modules/alertify.js-0.3.11/themes/alertify.bootstrap.css" />
+        <script src="node_modules/alertify.js-0.3.11/lib/alertify.min.js"></script>
+        <script src="node_modules/jquery-xml2json/src/xml2json.js"></script>
+        <script src="CookieHandler.js"></script>
+        <script src="GameHandler.js"></script>
+        <script src="PlayerHandler.js"></script>
+    	<script src="GridHandler.js"></script>
+    	<script src="PlayerModel.js"></script>
+    	<script src="PlayerCollection.js"></script>
+        <div class="container">
+            <div class="rectangle" style="background:#30a8d8">
+                <div class="content">
+                    <h1 style="font-family:'Gill Sans';text-align:center;font-size:650%">NFL Watch Zone</h1>
+                    <h3 style="text-align:center">Check stats, Play fantasy, Profit</h3>
+                    </br>
+                </div>
+            </div>
+        </div>
+	</head>
+	<body style="background-color:#f0f0c0">
+		<div class="container">
+            </br>
+            <div class="rectangle" style="background:#f0c018">
+                </br>
+    			<div class="row">
+    				<div class="col-xs-6 col-xs-offset-3">
+    	     			<div class="typeahead__container">
+       						<div class="typeahead__field">
+            					<span class="typeahead__query" type="submit">
+               						<span class="typeahead__cancel-button"></span>
+               						<input id="input-player-search" class="player-search" type="search" placeholder="Search for a player to watch..." autocomplete="off">
+               					</span>
+        					</div>
+    					</div>
+                        <div align="center" class="btn_container" style="padding-top:10px">
+                            <button id="btn-player-search" type="button" class="btn btn-success">Start Watching Player</button>
+                            <button id="btn-delete-selected" type="button" class="btn btn-danger">Remove Selected Players</button>
+                        </div>
+    	    		</div>
+        		</div>
+                </br>
+            </div>
+            </br>
+			<div id="grids" style="background:#18d890;padding-left:10px;padding-right:10px">
+                <div class="row"></div>
+				<script src="main.js"></script>
+                <h3 style="font-family:'Gill Sans';text-align:center">Passing</h3>
+				<div id="passing-grid" style="background:#FFFFFF"></div>
+                <h3 style="font-family:'Gill Sans';text-align:center">Rushing</h3>
+				<div id="rushing-grid" style="background:#FFFFFF"></div>
+                <h3 style="font-family:'Gill Sans';text-align:center">Receiving</h3>
+				<div id="receiving-grid" style="background:#FFFFFF"></div>
+                <h3 style="font-family:'Gill Sans';text-align:center">Kicking</h3>
+				<div id="kicking-grid" style="background:#FFFFFF"></div>
+                <h3 style="font-family:'Gill Sans';text-align:center">Defense</h3>
+				<div id="defense-grid" style="background:#FFFFFF"></div>
+                </br>
+			</div>
+		</div>
+        </br>
+        </br>
+        <p style="text-align:center">Inactive Players List:</p>
+        <p id="p-inactive-players" style="text-align:center"></p>
+        <p style="text-align:center">Note: Added players are saved so that they will be here again next time you visit the watch zone.</p>
+        <p style="text-align:center">Created by Aspyn.</p>
+	</body>
+</html>
